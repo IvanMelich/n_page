@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>nёrd`s</title>
+	<link rel="stylesheet" href="css/normolize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/main_js.js" type="text/javascript"></script>
+</head>
+<body>
+	<header class="header-magazin">
+		<nav class="main-navigation">
+			<a href="#"><img class="head-logo" src="img/nerds-logo.png" alt="img"></a>
+			<ul class="top-navigation">
+				<li><a href="index.html" >студия</a></li>
+				<li><a href="#">клиенты</a></li>
+				<li><a href="#" class="on-page">магазин</a></li>
+				<li><a href="#contact">контакты</a></li>
+			</ul>
+			<a href="#" class="cart-enter" ><img class="cart" src="img/cart-icon.png" alt="img">корзина</a>
+		</nav>
+		<h1>Магазин готовых шаблонов</h1>
+	</header>
+	<div class="main-cover">
+		<div class="left-block">
+		<form action="">
+			<h4>стоимость:</h4>
+			<div class="filter-cover"><!--Start filter price-->
+				<div class="scale-control">
+					<div class="scale">
+						<div class="bar"></div>
+					</div>
+					<div class="point min-point"></div>
+					<div class="point max-point"></div>
+				</div>
+				<div class="price">
+					от<input type="text" value="0" name="min-price" class="min-price">
+				<span>до</span><input type="text" value="1555" name="max-price" class="max-price">
+				</div>
+			</div>
+			<h4>Сетка:</h4>
+			<div class="basket-cover">
+				<input type="radio" name="type" value="adaptiv">Адаптивная<br>
+				<span class="style-rb"></span>
+				<input type="radio" name="type" value="fix">Фиксированная<br>
+				<span class="style-rb"></span>
+				<input type="radio" name="type" value="rubber">Резиновая<br>
+				<span class="style-rb"></span>
+			</div>
+			<h4>Особенности:</h4>
+			<div class="special-reqwest">
+				<input type="checkbox" name="special-reqwest" value="slaid">Слайдер<br>
+				
+				<input type="checkbox" name="special-reqwest" value="block">Блок преимуществ<br>
+		
+				<input type="checkbox" name="special-reqwest" value="news">Новости<br>
+		
+				<input type="checkbox" name="special-reqwest" value="gallery">Галерея<br>
+	
+				<input type="checkbox" name="special-reqwest" value="basket">Корзина<br>
+				
+			</div>
+				<button type="submit">показать</button>
+			</form>	
+		</div><!--Finish filter-->
+		<div class="right-block">
+			<ul>
+				<li>сортировать:</li>
+				<li><a href="">по цене</a></li>
+				<li><a href="">по типу</a></li>
+				<li><a href="">по названию</a></li>
+				<li><a href=""><img src="img/sort-down.png" class="arrow" alt="img"></a></li>
+				<li><a href=""><img src="img/sort-up.png" class="arrow"  alt="img"></a></li>
+			</ul>
+			<div class="gallery-cover">
+				<div class="template">
+					<img src="img/browser.png" class="brows" alt="img">
+					<img src="img/img-sedona.png" alt="img">
+					<div class="template-block">
+						<h5>pink app</h5><br>
+						<span>Продуктовый лендинг приложения для iOS и Android </span><br>
+						<button type="button">9 900 РУБ.</button>
+					</div>
+				</div>
+				<div class="template">
+					<img src="img/browser.png" class="brows" alt="img">
+					<img src="img/img-pink.png" alt="img">
+					<div class="template-block">
+						<h5>pink app</h5><br>
+						<span>Продуктовый лендинг приложения для iOS и Android </span><br>
+						<button type="button">9 900 РУБ.</button>
+					</div>
+				</div>
+				<div class="template">
+					<img src="img/browser.png" class="brows" alt="img">
+					<img src="img/img-barbershop.png" alt="img">
+					<div class="template-block">
+						<h5>pink app</h5><br>
+						<span>Продуктовый лендинг приложения для iOS и Android </span><br>
+						<button type="button">9 900 РУБ.</button>
+					</div>
+				</div>
+				<div class="template">
+					<img src="img/browser.png" class="brows" alt="img">
+					<img src="img/img-mishka.png" alt="img">
+					<div class="template-block">
+						<h5>pink app</h5><br>
+						<span>Продуктовый лендинг приложения для iOS и Android </span><br>
+						<button type="button">9 900 РУБ.</button>
+					</div>
+				</div>
+				<div class="template">
+					<img src="img/browser.png" class="brows" alt="img">
+					<img src="img/img-aplus.png" alt="img">
+					<div class="template-block">
+						<h5>pink app</h5><br>
+						<span>Продуктовый лендинг приложения для iOS и Android </span><br>
+						<button type="button">9 900 РУБ.</button>
+					</div>
+				</div>
+				<div class="template">
+					<img src="img/browser.png" class="brows" alt="img">
+					<img src="img/img-kvast.png" alt="img">
+					<div class="template-block">
+						<h5>pink app</h5><br>
+						<span>Продуктовый лендинг приложения для iOS и Android </span><br>
+						<button type="button">9 900 РУБ.</button>
+					</div>
+				</div>
+			</div>
+			<div class="page-list" >
+				<button type="button" id="select-page" >1</button>
+				<button type="button">2</button>
+				<button type="button">3</button>
+				<button type="button" id="next-page">следующия</button>
+			</div>
+		</div>
+	</div>
+	<section id="contact">
+		<div class="map-cover">
+			<div class="contact-map">
+				<h4>nёrds design studio</h4>
+				<p>191186, Санкт-Петербург,
+					ул. Б.Конюшеннная, д. 19/8 <br>
+					<span>тел +7 (812) 275-75-75</span>
+				</p>
+				<button type="button" class="write-us">напишите нам</button>
+			</div>
+			<img  class="map" src="img/map.png" alt="map" alt="img">
+			<img  class="map-marker" src="img/map-marker.png" alt="img">
+		</div>
+	</section>
+	<footer>
+		<div class="footer-cover">
+			<div class="social">
+				<a href="#"><img class="img-icon-1 opacity-icon" src="img/vk-icon.png" alt="img"></a>
+				<a href="#"><img class="img-icon-2 opacity-icon" src="img/fb-icon.png" alt="img"></a>
+				<a href="#"><img class="img-icon-3 opacity-icon" src="img/insta-icon.png" alt="img"></a>
+			</div>
+			<div class="frend-title">
+				<h2>Давайте дружить, это выгодно!</h2>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</div>
+		<section>
+			<div class="pop-up">
+				<button class="close-pop-up" type="button" title="закрыть">Закрыть</button>
+				<h2>Напишите нам</h2>
+				<form action="">
+					<div class="cover-form">
+						<div class="form1">
+							<span class="name" >Ваше имя: </span><br>
+							<input type="text" placeholder="  Представтесь, пожалуйста">
+						</div>
+						<div class="form2">
+							<span class="email">Ваш e-mail:</span><br>
+							<input type="text" placeholder="  Для отправки ответа">
+						</div>
+					</div>	
+					<div class="letter-area">						
+						<span>Текс письма:</span><br>
+						<textarea name="letter" cols="1" rows="1" placeholder="  В свободной форме" maxlength="10000"
+						minlength="100"></textarea>
+					</div>	
+	
+					<button type="submit">отправить</button>
+				</form>
+			</div>
+		</section>
+	</footer>
+
+</body>
+</html>
